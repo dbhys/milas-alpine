@@ -10,6 +10,8 @@ And default Timezone is "Asia/Shanghai"
 
 ```
 FROM dbhys/milas-alpine:3.9
+
+RUN mkdir -p /deployments
 COPY ${your_dist_files} /deployments
 
 EXPOSE ${your_port}
